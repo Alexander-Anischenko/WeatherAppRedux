@@ -20,18 +20,19 @@ export const InputStyle = styled.input`
   gap: 10px;
   border-radius: 40px;
   opacity: 0px;
-  font-size: 16px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
   outline: none;
   border: 1px solid #ffffff;
-  background: #ffffff1a;
-  backdrop-filter: blur(16px); 
-   ::placeholder{
-        color: #cececeff; 
-    } 
-`;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  ::placeholder {
+    color: #cececeff;
+  }
+`
 
 export const ErrorMessage = styled.div`
   height: 18px;
   color: red;
   font-size: 16px;
-`;
+`

@@ -10,7 +10,7 @@ export const HomePageWrapper = styled.div`
 `
 
 export const CityForm = styled.form`
-display: flex;
+  display: flex;
   width: Fixed (710px) px;
   height: Hug (48px) px;
   top: 200px;
@@ -18,9 +18,3 @@ display: flex;
   gap: 14px;
   opacity: 0px;
 `
-
-/* export const UserFormName = styled.p`
-  font-size: 24px;
-  font-weight: bold;
-  color: #0e2936;
-` */

@@ -1,7 +1,11 @@
-import { SpinnerComponent } from "./styles";
+import { SpinnerComponent, SpinnerWrapper } from "./styles"
 
-function Spinner (){
- return <SpinnerComponent></SpinnerComponent>
+function Spinner() {
+  return (
+    <SpinnerWrapper>
+      <SpinnerComponent></SpinnerComponent>
+    </SpinnerWrapper>
+  )
 }
 
-export default Spinner;
+export default Spinner

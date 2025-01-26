@@ -14,7 +14,6 @@ import {
   MainPictureContainer,
 } from "./styles"
 
-
 function Layout({ children }: LayoutProps) {
   const navigate = useNavigate()
 
@@ -24,7 +23,7 @@ function Layout({ children }: LayoutProps) {
     <LayoutWrapper>
       <Header>
         <HeaderLogoContainer onClick={goToHomePage}>
-        Weather App
+          Weather App
         </HeaderLogoContainer>
         <NavContainer>
           <StyledNavLink
@@ -45,9 +44,7 @@ function Layout({ children }: LayoutProps) {
           </StyledNavLink>
         </NavContainer>
       </Header>
-      <Main>
-        {children}
-      </Main>
+      <Main>{children}</Main>
     </LayoutWrapper>
   )
 }

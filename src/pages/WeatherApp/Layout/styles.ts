@@ -6,7 +6,7 @@ export const LayoutWrapper = styled.div`
   background-image: url(${background});
   background-size: cover;
   background-position: center;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `
@@ -29,7 +29,7 @@ export const Header = styled.header`
     ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(17.799999237060547px);
-  border-bottom: 1px solid #D2D2D2
+  border-bottom: 1px solid #d2d2d2;
 `
 
 export const HeaderLogoContainer = styled.div`
