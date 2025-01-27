@@ -1,4 +1,5 @@
 export interface WeatherAppData {
+    id?: string
   temperature: number
   city: string
   icon: string

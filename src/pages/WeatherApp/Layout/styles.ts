@@ -63,7 +63,6 @@ export const Main = styled.main`
   height: 1080px;
   top: -1755px;
   left: -4544px;
-  gap: 0px;
   opacity: 0px;
 `
 

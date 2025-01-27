@@ -2,8 +2,9 @@ import styled from "@emotion/styled"
 
 export const SpinnerComponent = styled.div`
   border: 40px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #f5c31f;
+  border-left-color: #c7f51fcb;
   border-radius: 50%;
+  opacity: 0.7;
   width: 80px;
   height: 80px;
   animation: spin 1s linear infinite;

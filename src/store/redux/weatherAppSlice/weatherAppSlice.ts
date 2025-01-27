@@ -4,6 +4,7 @@ import { createAppSlice } from "../../createAppSlice"
 import type { WeatherAppData, WeatherAppSliceState } from "./types"
 import type { CityFormData } from "../../../pages/WeatherApp/Layout/Home/types"
 import type { PayloadAction } from "@reduxjs/toolkit"
+import { v4 } from "uuid"
 
 export const weatherAppInitialState: WeatherAppSliceState = {
   data: undefined,
@@ -54,19 +55,33 @@ export const weatherAppSlice = createAppSlice({
       },
     ),
 
-    saveWeatherData: create.reducer(
+   /*  saveWeatherData: create.reducer(
       (state: WeatherAppSliceState, action: PayloadAction<WeatherAppData>) => {
         state.savedData = [...state.savedData, action.payload]
       },
-    ),
+    ), */
 
-    deleteSavedData: create.reducer(
+    saveWeatherData: create.reducer(
+        (state: WeatherAppSliceState, action: PayloadAction<WeatherAppData>) => {
+          state.savedData = [...state.savedData, {id: v4(), ...action.payload}]
+        },
+      ),
+
+    /* deleteSavedData: create.reducer(
       (state: WeatherAppSliceState, action: { payload: string }) => {
         state.savedData = state.savedData.filter(
           data => data.city !== action.payload,
         )
       },
-    ),
+    ), */
+
+    deleteSavedData: create.reducer(
+        (state: WeatherAppSliceState, action: PayloadAction<string>) => {
+          state.savedData = state.savedData.filter(
+            item => item.id !== action.payload,
+          )
+        },
+      ),
 
     deleteAllSavedData: create.reducer((state: WeatherAppSliceState) => {
       state.savedData = []
