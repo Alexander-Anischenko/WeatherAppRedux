@@ -7,6 +7,7 @@ export const LayoutWrapper = styled.div`
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
 `
@@ -59,10 +60,10 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
-  top: -1755px;
-  left: -4544px;
+  /* top: -1755px;
+  left: -4544px; */
   opacity: 0px;
 `
 
@@ -99,3 +100,4 @@ export const StyledLink = styled(Link)`
   font-size: 16px;
   color: white;
 `
+  
