@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Layout from "./pages/WeatherApp/Layout/Layout"
+import Layout from "./components/Layout/Layout"
 import Home from "./pages/WeatherApp/Layout/Home/Home"
 import History from "./pages/WeatherApp/Layout/History/History"
 

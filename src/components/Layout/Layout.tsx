@@ -7,11 +7,7 @@ import {
   HeaderLogoContainer,
   NavContainer,
   Main,
-  Footer,
   StyledNavLink,
-  StyledLink,
-  FooterNavContainer,
-  MainPictureContainer,
 } from "./styles"
 
 function Layout({ children }: LayoutProps) {

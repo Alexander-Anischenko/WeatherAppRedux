@@ -11,7 +11,9 @@ import {
 function History() {
   const dispatch = useAppDispatch()
 
-  const savedWeatherData = useAppSelector(weatherAppSliceSelectors.savedData) // Получаем данные о погоде из store
+ 
+  // делаем деструктуризацию данных о погоде из store
+    const {savedData} = useAppSelector(weatherAppSliceSelectors.weatherData)
 
   // Создаем функцию, которая будет удалять карточку с погодой по названию города или в данном случае по id
   const handleDelete = (id: string) => {
@@ -24,7 +26,8 @@ function History() {
     dispatch(weatherAppSliceActions.deleteAllSavedData())
   }
 
-  const savedWeatherComponents = savedWeatherData.map(cityWeather => {
+    // Создаем массив с данными о погоде, которые будут отображаться на странице
+  const savedWeatherComponents = savedData.map(cityWeather => {
     return (
       <Info
       //key={v4()}

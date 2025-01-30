@@ -97,7 +97,6 @@ export const weatherAppSlice = createAppSlice({
   }),
   selectors: {
     weatherData: (state: WeatherAppSliceState) => state,
-    savedData: (state: WeatherAppSliceState) => state.savedData,
   },
 })
 
